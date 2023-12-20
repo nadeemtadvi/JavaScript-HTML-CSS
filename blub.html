@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+</head>
+<style>
+    #bulb{
+        margin: auto;
+        height: 300px;
+        width: 300px;
+        border: 4px solid #000;
+        border-radius: 50%;
+        background-color: yellow;
+    }
+    button{
+        padding: 10px 20px;
+        font-size: 20px;
+        margin-left: 65%;
+    }
+
+</style>
+
+<body>
+    <h1>DOM JS</h1>
+    <div id="bulb"></div>
+    <button>ON</button>
+
+    <script>
+
+        var b=document.querySelector("#bulb")
+        var btn=document.querySelector('button')
+        var flag=0
+        btn.addEventListener("click",function(){
+            if (flag==0){
+                b.style.backgroundColor="yellow"
+                console.log("clicked")
+                flag=1
+            }
+            else{
+                b.style.backgroundColor="transparent"
+                console.log("Again Clicked")
+                flag=0
+            }
+        })
+    </script>
+
+</body>
+
+</html>

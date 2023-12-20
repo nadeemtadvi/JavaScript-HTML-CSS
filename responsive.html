@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium';
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .main {
+            height: 100%;
+            width: 100%;
+
+            position: relative;
+        }
+
+        nav {
+            height: 100px;
+            width: 100%;
+            /* background-color: red; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 3vw;
+            font-size: 1.5vw;
+            /* border-bottom: 2px solid salmon; */
+
+        }
+
+        .child {
+            display: flex;
+            align-items: center;
+            gap: 4vw;
+        }
+
+        .child li {
+            list-style: none;
+        }
+
+        .main nav div {
+            font-size: 2vw;
+            font-weight: 700;
+        }
+
+        .main nav h2 {
+            font-size: 2vw;
+            display: none;
+        }
+
+        .content {
+            height: calc(100% - 100px);
+            width: 100%;
+            /* background-color: rgb(254, 171, 46); */
+            position: relative;
+            display: flex;
+        }
+
+        .left {
+            height: 100%;
+            width: 50%;
+            /* background-color: crimson; */
+            padding: 5vw 4vw;
+
+        }
+
+        .left h1 {
+            font-size: 4vw;
+            line-height: 5.5vw;
+        }
+
+        .left p {
+            font-size: 1.1vw;
+            font-weight: 600;
+            width: 80%;
+            margin-top: 3vw;
+            margin-bottom: 4vw;
+        }
+
+        .right {
+            height: 100%;
+            width: 50%;
+            /* background-color: rgb(123, 23, 245); */
+        }
+
+        .right img {
+            height: 100%;
+            width: 100%;
+        }
+
+        button {
+            font-size: 1.2vw;
+            padding: 1.2vw 2vw;
+            background-color: lightseagreen;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+
+        @media (max-width:600px) {
+
+            nav {
+                background-color: aquamarine;
+                padding: 0 5vw;
+                height: 60px;
+            }
+
+            .main nav div {
+                font-size: 6vw;
+                /* font-weight: 700; */
+            }
+
+            .child li {
+                font-size: 4vw;
+                display: none;
+            }
+
+            .main nav h2 {
+                display: block;
+                font-size: 6vw;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <div>LOGO</div>
+            <ul class="child">
+                <li>About</li>
+                <li>Blog</li>
+                <li>Service</li>
+                <li>Contact</li>
+            </ul>
+            <button>Sign in</button>
+            <h2>&#128212;</h2>
+        </nav>
+        <div class="content">
+            <div class="left">
+                <h1>Long way journey</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, modi ullam? Nemo facere distinctio eius
+                    tenetur eligendi deleniti impedit vitae.</p>
+                <button>Explore Now</button>
+            </div>
+            <div class="right">
+                <img src="./0101.png" alt="">
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

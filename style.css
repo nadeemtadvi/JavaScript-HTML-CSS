@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+nav{
+    height: 80px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+ nav #logo{
+    
+    font-size: 30px;
+    font-weight: bold;
+   padding: 20px;
+    
+}
+nav ul{
+    list-style: none;
+    font-weight: bold;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    
+}
+nav ul #input{
+    width: 30;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    
+    font-weight: bold;
+    font-size: 15px;
+}
+#container{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#container #left{
+    
+    color: red;
+    padding: 20px;
+
+}
+#left h1{
+    color: black;
+    padding-bottom: 20px ;
+}
+#left p{
+    color: black;
+    margin: 10px;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+#left button{
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+    text-shadow: 30px;
+    width: 15vw;
+    padding:10px;
+    margin-top: 20px;
+    
+}
+ 
+
+#right img{
+    height: 80vh;
+    width: 40vw;
+}
+
+#footer
+{
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    color: black;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+#footer #part1{
+    margin-top: 100px;
+    padding: 100px;
+    height: 40vh;
+    width: 100%;
+}
+#footer #part2{
+    margin-top: 100px;
+    padding: 100px;
+    height: 40vh;
+    width: 100%;
+}
+#footer #part3{
+    margin-top: 100px;
+    padding: 100px;
+    height: 40vh;
+    width: 100%;
+}
+
+@media (max-widhth:642){
+    #input{
+        width: 10vw;
+    }
+    #footer{
+        width: 50%;
+    }
+    nav{
+        width: 20%;
+    }
+}    
+
